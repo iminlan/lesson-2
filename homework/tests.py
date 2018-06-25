@@ -43,7 +43,6 @@ def test_file_data():
             for line in u:
                 text_words = list(re.findall(r'\w+', line.casefold()))    #ищем слова
                 num += text_words.count(word)
-        u.close()
         return num
 
     assert count_word_in_file("homework/pony.txt", "радуга") == 0
