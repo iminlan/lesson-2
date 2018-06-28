@@ -38,3 +38,19 @@ def test_file_data():
     assert count_word_in_file("homework/pony.txt", "радуга") == 0
     assert count_word_in_file("homework/pony.txt", "и") == 3
     assert count_word_in_file("homework/pony.txt", "пони") == 5
+
+
+def test_text_stat_hard():
+    """
+    Задание: необходимо реализовать функцию, которая принимает filename - имя текстового файла 
+    и возвращает кортедж: (количество строк, количество слов, количество символов) в тексте.
+    Текст может содержать любые символы латинского алфавита, цифры, пробелы и знаки пунктуации.
+    Словом считается число-буквенная последовательность (например elephant, el3phant или 449).
+    """
+
+    def text_stat(filename):
+        pass
+
+    assert text_stat("homework/textstat1.txt") == (6, 69, 445)
+    assert text_stat("homework/textstat2.txt") == (6, 73, 459)
+    assert text_stat("homework/textstat3.txt") == (10, 73, 447)
